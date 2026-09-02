@@ -1,12 +1,28 @@
+<br>
+
 <div align="center">
 
-# 弄堂沉浮录 · 1936
+# 弄 堂 沉 浮 录
 
-### 初芯OPC · 五洲大药房 · 1936
+### · 1 9 3 6 ·
 
-**自研 LLM 兜底链 + NPC 情绪持久化**
+</div>
 
-> 1936 年上海武康路 / 海派初芯·青年 AI 创新黑客松 / 沪上生息与张力 —— AI 游戏叙事实验室
+<br>
+
+<div align="center">
+
+<img src="docs/screenshots/cover.png" alt="弄堂沉浮录·1936" width="100%" />
+
+</div>
+
+<br>
+
+<div align="center">
+
+## 初 芯 O P C · 五 洲 大 药 房
+
+**100 天魂穿经营 · 9 个有血有肉的史实 NPC · 10 种结局 · 4 选 1 清明抉择**
 
 </div>
 
@@ -15,7 +31,7 @@
 <div align="center">
 
 [![Star](https://img.shields.io/github/stars/Dest1ny-Sec/OPC-AI-game-demo?style=for-the-badge&logo=github&color=FFB400)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo/blob/main/.gitignore)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Bundle](https://img.shields.io/badge/bundle-269KB-B03A2E?style=for-the-badge)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo)
 [![Vite](https://img.shields.io/badge/vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
@@ -27,15 +43,7 @@
 
 <div align="center">
 
-> **一句话简介**：1936 年武康路五洲大药房的 100 天魂穿经营叙事。9 个有血有肉的历史 NPC 跟你过招，4 选 1 清明抉择定 10 种结局。
-
-</div>
-
-<br>
-
-<div align="center">
-
-![首页 - 武康路俯瞰](docs/screenshots/play-home-v6.png)
+> 1936 年上海武康路 · 海派初芯 · 青年 AI 创新黑客松 · 沪上生息与张力
 
 </div>
 

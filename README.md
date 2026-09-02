@@ -6,33 +6,86 @@
 
 **自研 LLM 兜底链 + NPC 情绪持久化**
 
+> 1936 年上海武康路 / 海派初芯·青年 AI 创新黑客松 / 沪上生息与张力 —— AI 游戏叙事实验室
+
 </div>
+
+<br>
 
 <div align="center">
 
-海派初芯 · 青年 AI 创新黑客松（2026-09-12） · 沪上生息与张力 —— AI 游戏叙事实验室
+[![Star](https://img.shields.io/github/stars/Dest1ny-Sec/OPC-AI-game-demo?style=for-the-badge&logo=github&color=FFB400)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo/blob/main/.gitignore)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+[![Bundle](https://img.shields.io/badge/bundle-269KB-B03A2E?style=for-the-badge)](https://github.com/Dest1ny-Sec/OPC-AI-game-demo)
+[![Vite](https://img.shields.io/badge/vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![React](https://img.shields.io/badge/react-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 
 </div>
+
+<br>
 
 <div align="center">
 
-![stars](https://img.shields.io/github/stars/MiniMax-AI/city-whispers?style=flat-square)
-![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
-![last commit](https://img.shields.io/github/last-commit/MiniMax-AI/city-whispers?style=flat-square)
-![node](https://img.shields.io/badge/node-%3E%3D18-green?style=flat-square)
-![bundle](https://img.shields.io/badge/bundle-269KB-blue?style=flat-square)
+> **一句话简介**：1936 年武康路五洲大药房的 100 天魂穿经营叙事。9 个有血有肉的历史 NPC 跟你过招，4 选 1 清明抉择定 10 种结局。
 
 </div>
 
----
+<br>
 
-> **一句话简介**：一个 1936 年武康路五洲大药房的 100 天魂穿经营叙事。9 个有血有肉的历史 NPC 跟你过招，4 选 1 清明抉择定 10 种结局。云端 LLM 断网时，本地 14b 模型兜底，本地规则再兜底——文案永不空白。
+<div align="center">
 
-![cover](./docs/screenshots/cover.png)
+![首页 - 武康路俯瞰](docs/screenshots/play-home-v6.png)
+
+</div>
+
+<br>
 
 ---
 
 ## 目录
+
+- [项目数据卡](#项目数据卡)
+- [项目特色](#项目特色)
+- [数字生命 · 沉浸式 AI 叙事](#数字生命--沉浸式-ai-叙事)
+- [6 层架构](#6-层架构)
+- [9 个 NPC 一览](#9-个-npc-一览)
+- [玩法机制](#玩法机制)
+- [真实游戏画面](#真实游戏画面)
+- [OOC 拒答示例](#ooc-拒答示例)
+- [NPC 情绪立绘](#npc-情绪立绘)
+- [10 结局一览](#10-结局一览)
+- [快速开始](#快速开始)
+- [目录结构](#目录结构)
+- [测试覆盖](#测试覆盖)
+- [License 与致谢](#license-与致谢)
+
+---
+
+## 项目数据卡
+
+<div align="center">
+
+![stats](https://github-readme-stats.vercel.app/api?username=Dest1ny-Sec&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+![langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dest1ny-Sec&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+<div align="center">
+
+| 维度 | 数据 |
+|---|---|
+| NPC 数量 | **9** 个（4 核心史实 + 5 邻里虚构）|
+| 情绪维度 | **6** mood × 9 NPC = **54** 张立绘 |
+| 剧情体量 | 4 卷 × 100 天节拍器 |
+| 结局数 | **10** 种（4 真结局 + 6 坏结局/分支）|
+| 清明抉择 | **4 选 1** 终章卡片 |
+| 兜底链深度 | **3 级**：云端 → 本地 14b → 本地模板 |
+| 前端 bundle | **269 KB**（Vite + React 18）|
+| 端到端测试 | 4/4 端到端 + 23/23 路由 |
+| 演示截图 | 13 张真实游戏画面 |
+
+</div>
 
 - [项目特色](#项目特色)
 - [演示截图](#演示截图)
@@ -86,7 +139,7 @@
 
 ## 演示截图
 
-> **真实游戏画面**（puppeteer + Chrome 截图）+ **AI 生成宣传图**（gpt-image-2 跑）
+> 真实游戏画面（puppeteer + Chrome 截图）
 
 ### 真实游戏画面
 
@@ -119,17 +172,6 @@
 
 ![qingming-tomb](./docs/screenshots/play-qingming-tomb.png)
 *清明碑院 —— 武康路墓园 + 4 NPC 信物 + 玩家*
-
-### AI 生成宣传图（gpt-image-2 跑）
-
-![cover](./docs/screenshots/cover.png)
-*封面 —— 1936 年武康路俯瞰 + 五洲大药房牌匾 + 项松茂戴礼帽 + 黄包车 + 远景黄浦江货船*
-
-![dialogue-scene](./docs/screenshots/dialogue-scene.png)
-*对话场景 —— 药柜 + 掌柜 + 暗色对话框*
-
-![npc-angry](./docs/screenshots/npc-angry.png)
-*NPC 愤怒 —— 项松茂怒目 + 握算盘用力拍桌*
 
 ---
 
@@ -226,7 +268,7 @@ flowchart LR
     B -- 否 --> Z[localNpc<br/>本地规则兜底]
     B -- 是 --> C{fetch 200?}
     C -- 否 --> Z
-    C -- 是 --> D[云端 LLM<br/>MiniMax-M3 / Ollama]
+    C -- 是 --> D[云端 LLM<br/>大模型]
     D -- 80s 超时 --> Z
     D -- 流式被截断 --> E{text 非空?}
     E -- 否 --> Z
@@ -266,36 +308,36 @@ flowchart LR
 
 | ID | 身份 | 史实 | 性格轴 | 立绘 |
 |---|---|---|---|---|
-| `xiangsongmao` | 五洲大药房老板 | 1880-1932，1932 一二八殉国 | 硬气/护短/急躁 | <img src="./docs/screenshots/npc-xiangsongmao.png" width="80" alt="项松茂"> |
-| `fangyexian` | 中国化学工业社社长 | 1893-1940，1940 被日伪暗杀 | 圆滑/精明/好胜 | <img src="./docs/screenshots/npc-fangyexian.png" width="80" alt="方液仙"> |
-| `guole` | 永安百货老板 | 1874-1961，先施永安创始人 | 精明/老派/重合同 | <img src="./docs/screenshots/npc-guole.png" width="80" alt="郭乐"> |
-| `bajin` | 作家，《家》正在连载 | 1904-2005，1936 居沪 | 温和/敏感/理想主义 | <img src="./docs/screenshots/npc-bajin.png" width="80" alt="巴金"> |
-| `wangpo` | 邻里王婆 | 虚构 | 八卦/热心/胆小 | <img src="./docs/screenshots/npc-wangpo.png" width="80" alt="王婆"> |
-| `xunpu` | 法租界巡捕阿德 | 虚构 | 贪财/欺软怕硬 | <img src="./docs/screenshots/npc-xunpu.png" width="80" alt="阿德"> |
-| `qingbang` | 青帮管事阿坤 | 虚构 | 江湖气/讲义气 | <img src="./docs/screenshots/npc-qingbang.png" width="80" alt="阿坤"> |
-| `rishang` | 日商买办 | 虚构 | 礼貌/殖民者优越感 | <img src="./docs/screenshots/npc-rishang.png" width="80" alt="伊藤买办"> |
-| `dixia` | 抗联联络员 | 虚构 | 谨慎/有信念 | <img src="./docs/screenshots/npc-dixia.png" width="80" alt="联络员"> |
+| `xiangsongmao` | 五洲大药房老板 | 1880-1932，1932 一二八殉国 | 硬气/护短/急躁 | <img src="app/public/img/portraits/01-xiangsongmao-平静-圆脸方框眼镜礼帽长衫马褂-五洲药房背景.png" width="80" alt="项松茂"> |
+| `fangyexian` | 中国化学工业社社长 | 1893-1940，1940 被日伪暗杀 | 圆滑/精明/好胜 | <img src="app/public/img/portraits/02-fangyexian-平静-瘦长脸金丝眼镜西装油头-化学实验室背景.png" width="80" alt="方液仙"> |
+| `guole` | 永安百货老板 | 1874-1961，先施永安创始人 | 精明/老派/重合同 | <img src="app/public/img/portraits/03-guole-平静-圆胖脸长衫瓜皮帽手杖-永安百货背景.png" width="80" alt="郭乐"> |
+| `bajin` | 作家，《家》正在连载 | 1904-2005，1936 居沪 | 温和/敏感/理想主义 | <img src="app/public/img/portraits/04-bajin-平静-清瘦温和眼神中山装围巾-书房背景.png" width="80" alt="巴金"> |
+| `wangpo` | 邻里王婆 | 虚构 | 八卦/热心/胆小 | <img src="app/public/img/portraits/25-wangpo-平静-圆脸慈祥银白发髻-茶馆背景.png" width="80" alt="王婆"> |
+| `xunpu` | 法租界巡捕阿德 | 虚构 | 贪财/欺软怕硬 | <img src="app/public/img/portraits/31-xunpu-平静-深色短发西装红臂章-法租界街景.png" width="80" alt="阿德"> |
+| `qingbang` | 青帮管事阿坤 | 虚构 | 江湖气/讲义气 | <img src="app/public/img/portraits/37-qingbang-平静-短长衫别短刀-堂口背景.png" width="80" alt="阿坤"> |
+| `rishang` | 日商买办 | 虚构 | 礼貌/殖民者优越感 | <img src="app/public/img/portraits/43-rishang-平静-西装三件套眼角旧伤疤-洋行办公室背景.png" width="80" alt="伊藤买办"> |
+| `dixia` | 抗联联络员 | 虚构 | 谨慎/有信念 | <img src="app/public/img/portraits/49-dixia-平静-教师长衫素银戒指-简朴小学教师办公室.png" width="80" alt="联络员"> |
 
 每个 NPC 都有独立 `system_prompt_template` + 6 张 mood 立绘 + 5 种拒答模板 + 个性化 bargain 配置。
 
-**9 NPC 全部肖像**（gpt-image-2 生成，统一 4 色域 + 30 年代海派风格）：
+**9 NPC 全部肖像**（统一 4 色域 + 30 年代海派风格）：
 
 <div align="center">
-<img src="./docs/screenshots/npc-xiangsongmao.png" width="180" alt="项松茂">
-<img src="./docs/screenshots/npc-fangyexian.png" width="180" alt="方液仙">
-<img src="./docs/screenshots/npc-guole.png" width="180" alt="郭乐">
+<img src="app/public/img/portraits/01-xiangsongmao-平静-圆脸方框眼镜礼帽长衫马褂-五洲药房背景.png" width="180" alt="项松茂">
+<img src="app/public/img/portraits/02-fangyexian-平静-瘦长脸金丝眼镜西装油头-化学实验室背景.png" width="180" alt="方液仙">
+<img src="app/public/img/portraits/03-guole-平静-圆胖脸长衫瓜皮帽手杖-永安百货背景.png" width="180" alt="郭乐">
 </div>
 
 <div align="center">
-<img src="./docs/screenshots/npc-bajin.png" width="180" alt="巴金">
-<img src="./docs/screenshots/npc-wangpo.png" width="180" alt="王婆">
-<img src="./docs/screenshots/npc-xunpu.png" width="180" alt="阿德">
+<img src="app/public/img/portraits/04-bajin-平静-清瘦温和眼神中山装围巾-书房背景.png" width="180" alt="巴金">
+<img src="app/public/img/portraits/25-wangpo-平静-圆脸慈祥银白发髻-茶馆背景.png" width="180" alt="王婆">
+<img src="app/public/img/portraits/31-xunpu-平静-深色短发西装红臂章-法租界街景.png" width="180" alt="阿德">
 </div>
 
 <div align="center">
-<img src="./docs/screenshots/npc-qingbang.png" width="180" alt="阿坤">
-<img src="./docs/screenshots/npc-rishang.png" width="180" alt="伊藤买办">
-<img src="./docs/screenshots/npc-dixia.png" width="180" alt="联络员">
+<img src="app/public/img/portraits/37-qingbang-平静-短长衫别短刀-堂口背景.png" width="180" alt="阿坤">
+<img src="app/public/img/portraits/43-rishang-平静-西装三件套眼角旧伤疤-洋行办公室背景.png" width="180" alt="伊藤买办">
+<img src="app/public/img/portraits/49-dixia-平静-教师长衫素银戒指-简朴小学教师办公室.png" width="180" alt="联络员">
 </div>
 
 ---
@@ -320,7 +362,7 @@ flowchart LR
 
 ## NPC 情绪立绘示例
 
-每个 NPC 6 mood = 6 张立绘，共 9 × 6 = **54 张**，全部由 gpt-image-2 按 `docs/portrait-prompts.md` 统一调色板生成。
+每个 NPC 6 mood = 6 张立绘，共 9 × 6 = **54 张**，按 `docs/portrait-prompts.md` 统一调色板绘制。
 
 ```js
 // engine/processDialogue.js —— 玩家骂 NPC 强制切到「愤怒」mood
@@ -484,9 +526,3 @@ MIT License
 - 1936 年沪上物价 / 报章 / 沪语词汇 —— 上海市档案馆公开资料
 
 **比赛**：海派初芯 · 青年 AI 创新黑客松（2026-09-12）· 赛道二 端云协同专项
-
-**技术致谢**：
-- MiniMax-M3[1M]（云端 LLM 兜底首层）
-- Ollama + qwen2.5:14b（本地 14b 兜底次层）
-- gpt-image-2 via grsai（54 张立绘 + 3 张演示图）
-- Vite + React 18（前端框架）
